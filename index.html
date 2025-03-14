@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50-50 Betting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>🎲 50-50 Betting Game</h1>
+        <div class="nav-buttons">
+            <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            <button id="reset">🔄 Reset Game</button>
+        </div>
+    </nav>
+
+    <!-- Points and High Score -->
+    <p>💰 Your Points: <span id="points">1000</span></p>
+    <p>🏆 High Score: <span id="high-score">1000</span></p>
+
+    <!-- Game Rules -->
+    <h2>📜 Game Rules</h2>
+    <div id="rules">
+        <ul>
+            <li>🎲 Select a <b>difficulty level</b>.</li>
+            <li>💵 Enter your bet amount.</li>
+            <li>🔢 Guess a number within the selected range.</li>
+            <li>✅ If your guess is correct, you <b>win</b> double the amount you bet.</li>
+            <li>❌ If wrong, you <b>lose</b> the bet.</li>
+            <li>🎡 Use <b>Lucky Spin</b> for extra rewards.</li>
+            <li>🔥 Try <b>Double or Nothing</b> to <b>risk it all</b>.</li>
+            <li>🎁 Claim <b>Daily Rewards</b> for bonus points.</li>
+            <li>🔄 Reset the game anytime to start fresh.</li>
+        </ul>
+    </div>
+
+    <!-- Game Box -->
+    <div id="game">
+        <label for="difficulty">🎮 Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy (1-2)</option>
+            <option value="medium">Medium (1-5)</option>
+            <option value="hard">Hard (1-10)</option>
+        </select>
+
+        <label for="bet">💵 Enter Your Bet:</label>
+        <input type="number" id="bet" min="1">
+        
+        <label for="guess">🎲 Guess the Number:</label>
+        <input type="number" id="guess" min="1" max="10">
+
+        <button id="play">Play 🎮</button>
+        <button id="double-or-nothing">Double or Nothing 🔥</button>
+        <button id="lucky-spin">Lucky Spin 🎡</button>
+        
+        
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
