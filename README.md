@@ -11,3 +11,5 @@ A fun and interactive betting game where players test their luck and strategy by
 ✅ Reset Game Feature – Resets the high score and points for a fresh start.
 
 🎮 Play now and test your luck!
+
+Click here to play:  https://rishav-sharma1812.github.io/50-50-game/
